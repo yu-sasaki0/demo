@@ -31,7 +31,7 @@ steps:
       - upgrade
       - --install
       - ${TAG_NAME}-demo
-      - --namespace=${TAG_NAME}-demo
+      - --namespace=demo:${TAG_NAME}
       - --values
       - k8s/demo/${TAG_NAME}-values.yaml
       - --set
